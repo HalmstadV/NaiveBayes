@@ -9,6 +9,9 @@ stopwordsLineCount = sum(1 for line in open('stopwords.txt'))
 removePunctuation = str.maketrans('', '', string.punctuation)
 stopWordList = list()
 dictionary = {}
+myList = ["1","2","3"]
+
+
 
 try:
     filename = "dictionary.txt"
@@ -18,6 +21,31 @@ try:
     f2 = open(filename2,"r+")
 except IOError:
     print("Can't find files")
+
+
+def sentimentAnalyze(filename,**dictionary):
+
+    textfile = open(filename,"r")
+    for i in range(980):
+        positiveWordCount = 0;
+        negativeWordCount = 0;
+        string3 = textfile.readline()
+        splitted_line = string3.split()
+
+
+        for word in splitted_line:
+            stringLine = " ".join(splitted_line)
+            if word in dictionary:
+                word_sentiment = dictionary.get(word,"None")
+                if word_sentiment.__eq__("positive"):
+                    positiveWordCount+= 1
+                elif word_sentiment.__eq__("negative"):
+                    negativeWordCount+=1
+
+
+
+        print( stringLine+ "Negative word count : {} , Positive word count {}".format(negativeWordCount,
+                                                                                         positiveWordCount))
 
 
 
@@ -60,8 +88,12 @@ try:
         stringLine = " ".join(filteredList)
         appendFile.write("{}\n".format(stringLine))
 
+
+
 except IOError:
     appendFile.close()
 
 
+
+sentimentAnalyze("filteredtext.txt",**dictionary)
 
