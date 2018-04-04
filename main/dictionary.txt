@@ -182,6 +182,7 @@ type=weaksubj len=1 word1=adverse pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=adversity pos1=noun stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=advice pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=advice pos1=noun stemmed1=n priorpolarity=positive
+type=weaksubj len=1 word1=advise pos1=noun stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=advisable pos1=noun stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=advocate pos1=verb stemmed1=y priorpolarity=positive
 type=strongsubj len=1 word1=advocacy pos1=noun stemmed1=n priorpolarity=positive
@@ -1416,6 +1417,7 @@ type=weaksubj len=1 word1=cooperation pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=cooperation pos1=noun stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=cooperative pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=cooperatively pos1=adverb stemmed1=n priorpolarity=positive
+type=weaksubj len=1 word1=cool pos1=adverb stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=coping pos1=adj stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=coping pos1=noun stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=cordial pos1=adj stemmed1=n priorpolarity=positive
@@ -1465,6 +1467,7 @@ type=strongsubj len=1 word1=crafty pos1=adj stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=cramped pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=cranky pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=crass pos1=adj stemmed1=n priorpolarity=negative
+type=strongsubj len=1 word1=crap pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=crave pos1=verb stemmed1=y priorpolarity=positive
 type=strongsubj len=1 word1=craven pos1=anypos stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=cravenly pos1=anypos stemmed1=n priorpolarity=negative
@@ -2042,6 +2045,7 @@ type=weaksubj len=1 word1=disintegration pos1=noun stemmed1=n priorpolarity=nega
 type=strongsubj len=1 word1=disinterest pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=disinterested pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=dislike pos1=verb stemmed1=y priorpolarity=negative
+type=strongsubj len=1 word1=disliked pos1=verb stemmed1=y priorpolarity=negative
 type=weaksubj len=1 word1=dislocated pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=disloyal pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=disloyal pos1=noun stemmed1=n priorpolarity=negative
@@ -2280,6 +2284,7 @@ type=weaksubj len=1 word1=dud pos1=anypos stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=dull pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=dullard pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=dumb pos1=adj stemmed1=n priorpolarity=negative
+type=strongsubj len=1 word1=dumbest pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=dumb pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=dumbfound pos1=verb stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=dumbfounded pos1=adj stemmed1=n priorpolarity=negative
@@ -2455,6 +2460,7 @@ type=weaksubj len=1 word1=enhanced pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=enhancement pos1=noun stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=enjoin pos1=verb stemmed1=y priorpolarity=negative
 type=weaksubj len=1 word1=enjoy pos1=verb stemmed1=y priorpolarity=positive
+type=weaksubj len=1 word1=enjoyed pos1=verb stemmed1=y priorpolarity=positive
 type=strongsubj len=1 word1=enjoyable pos1=adj stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=enjoyably pos1=adverb stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=enjoyment pos1=noun stemmed1=n priorpolarity=positive
@@ -2787,6 +2793,7 @@ type=strongsubj len=1 word1=farcical-yet-provocative pos1=adj stemmed1=n priorpo
 type=strongsubj len=1 word1=farcically pos1=anypos stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=farsighted pos1=adj stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=fascinate pos1=verb stemmed1=y priorpolarity=positive
+type=strongsubj len=1 word1=fascinated pos1=verb stemmed1=y priorpolarity=positive
 type=strongsubj len=1 word1=fascinating pos1=anypos stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=fascinatingly pos1=anypos stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=fascination pos1=anypos stemmed1=n priorpolarity=positive
@@ -3441,6 +3448,7 @@ type=strongsubj len=1 word1=haste pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=hasty pos1=adj stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=hasty pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=hate pos1=verb stemmed1=y priorpolarity=negative
+type=strongsubj len=1 word1=hated pos1=verb stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=hater pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=hateful pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=hatefully pos1=anypos stemmed1=n priorpolarity=negative
@@ -3822,6 +3830,7 @@ type=weaksubj len=1 word1=imprecisely pos1=adverb stemmed1=n priorpolarity=negat
 type=weaksubj len=1 word1=imprecision pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=impregnable pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=impress pos1=verb stemmed1=y priorpolarity=positive
+type=weaksubj len=1 word1=impressed pos1=verb stemmed1=y priorpolarity=positive
 type=weaksubj len=1 word1=impression pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=impression pos1=noun stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=impressions pos1=adj stemmed1=n priorpolarity=positive
@@ -4486,6 +4495,7 @@ type=strongsubj len=1 word1=knowledgeable pos1=anypos stemmed1=n priorpolarity=p
 type=strongsubj len=1 word1=kook pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=kooky pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=lack pos1=adj stemmed1=n priorpolarity=negative
+type=strongsubj len=1 word1=lacked pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=lack pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=lackadaisical pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=lackey pos1=noun stemmed1=n priorpolarity=negative
@@ -4493,6 +4503,8 @@ type=strongsubj len=1 word1=lackeys pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=lackeys pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=lacking pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=lackluster pos1=anypos stemmed1=y priorpolarity=negative
+type=strongsubj len=1 word1=lacks pos1=anypos stemmed1=y priorpolarity=negative
+type=strongsubj len=1 word1=lacking pos1=anypos stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=laconic pos1=adj stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=lag pos1=verb stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=lambast pos1=verb stemmed1=y priorpolarity=negative
@@ -4626,6 +4638,8 @@ type=strongsubj len=1 word1=light-hearted pos1=adj stemmed1=n priorpolarity=posi
 type=weaksubj len=1 word1=lighten pos1=verb stemmed1=y priorpolarity=positive
 type=strongsubj len=1 word1=likable pos1=adj stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=like pos1=verb stemmed1=y priorpolarity=positive
+type=strongsubj len=1 word1=likes pos1=verb stemmed1=y priorpolarity=positive
+type=strongsubj len=1 word1=liked pos1=verb stemmed1=y priorpolarity=positive
 type=weaksubj len=1 word1=likelihood pos1=adj stemmed1=n priorpolarity=neutral
 type=weaksubj len=1 word1=likelihood pos1=noun stemmed1=n priorpolarity=neutral
 type=weaksubj len=1 word1=likely pos1=anypos stemmed1=y priorpolarity=neutral
@@ -4689,6 +4703,7 @@ type=strongsubj len=1 word1=lovelorn pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=lover pos1=noun stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=lovely pos1=adj stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=lovely pos1=anypos stemmed1=y priorpolarity=positive
+type=strongsubj len=1 word1=loved pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=low pos1=adj stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=low-cost pos1=adj stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=low-rated pos1=adj stemmed1=n priorpolarity=negative
@@ -4888,6 +4903,7 @@ type=strongsubj len=1 word1=merriness pos1=noun stemmed1=n priorpolarity=positiv
 type=strongsubj len=1 word1=merry pos1=adj stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=mesmerize pos1=verb stemmed1=y priorpolarity=positive
 type=strongsubj len=1 word1=mesmerizing pos1=anypos stemmed1=n priorpolarity=positive
+type=strongsubj len=1 word1=mesmerising pos1=anypos stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=mesmerizing pos1=anypos stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=mesmerizingly pos1=anypos stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=mess pos1=adj stemmed1=n priorpolarity=negative
@@ -7024,6 +7040,7 @@ type=weaksubj len=1 word1=sting pos1=verb stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=stinging pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=stingingly pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=stink pos1=noun stemmed1=n priorpolarity=negative
+type=strongsubj len=1 word1=stinks pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=stink pos1=verb stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=stinking pos1=anypos stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=stir pos1=adj stemmed1=n priorpolarity=neutral
@@ -7146,8 +7163,12 @@ type=weaksubj len=1 word1=successful pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=successfully pos1=adverb stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=succumb pos1=verb stemmed1=y priorpolarity=negative
 type=weaksubj len=1 word1=such pos1=anypos stemmed1=y priorpolarity=neutral
+type=strongsubj len=1 word1=suck pos1=noun stemmed1=n priorpolarity=negative
+type=strongsubj len=1 word1=sucked pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=sucker pos1=noun stemmed1=n priorpolarity=negative
+type=strongsubj len=1 word1=sucks pos1=noun stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=suffer pos1=verb stemmed1=y priorpolarity=negative
+type=weaksubj len=1 word1=suffered pos1=verb stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=sufferer pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=sufferers pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=sufferers pos1=noun stemmed1=n priorpolarity=negative
@@ -7565,6 +7586,7 @@ type=strongsubj len=1 word1=ugh pos1=anypos stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=ugliness pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=ugliness pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=ugly pos1=adj stemmed1=n priorpolarity=negative
+type=strongsubj len=1 word1=ugliest pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=ulterior pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=ultimate pos1=anypos stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=ultimately pos1=anypos stemmed1=n priorpolarity=positive
@@ -8031,6 +8053,7 @@ type=strongsubj len=1 word1=warily pos1=adverb stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=wariness pos1=noun stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=waste pos1=noun stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=waste pos1=verb stemmed1=y priorpolarity=negative
+type=weaksubj len=1 word1=wasted pos1=verb stemmed1=y priorpolarity=negative
 type=weaksubj len=1 word1=wasteful pos1=adj stemmed1=n priorpolarity=negative
 type=weaksubj len=1 word1=wastefulness pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=watchdog pos1=adj stemmed1=n priorpolarity=negative
@@ -8066,6 +8089,8 @@ type=weaksubj len=1 word1=welfare pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=welfare pos1=noun stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=well pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=well pos1=adverb stemmed1=n priorpolarity=positive
+type=weaksubj len=1 word1=welldone pos1=adverb stemmed1=n priorpolarity=positive
+type=strongsubj len=1 word1=well-done pos1=anypos stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=well-being pos1=adj stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=well-being pos1=noun stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=well-connected pos1=adj stemmed1=n priorpolarity=positive
