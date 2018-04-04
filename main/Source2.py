@@ -42,7 +42,7 @@ def sentimentAnalyze(filename,**dictionary):
 
 
 
-        print( stringLine+ "Negative word count : {} , Positive word count {}".format(negativeWordCount,
+        print( stringLine+ " -  Negative word count : {} , Positive word count {}".format(negativeWordCount,
                                                                                          positiveWordCount))
 
 
@@ -68,20 +68,28 @@ for i in range(stopwordsLineCount):
     #Read file,apply text preprocessing and write the preprocessed file into a new text file
     file1 = open("imdb_dataset.txt","r")
     appendFile = open("filteredtext.txt", "w")
+    ZeroCount = 0;
+    OneCount = 0;
     for i in range(datasetLineCount):
-
         datasetline = file1.readline().lower().translate(removePunctuation)
+        splitdatasetline = datasetline.split()
+        if splitdatasetline[len(splitdatasetline)-1].__contains__("0"):
+            ZeroCount+=1
+        elif splitdatasetline[len(splitdatasetline)-1].__contains__("1"):
+            OneCount+=1
+        # datasetline = file1.readline().lower().translate(removePunctuation)
 
         words = datasetline.split()
         filteredList = []
         for r in words:
-            if r not in stopWordList:
+            if r not in stopWordList and not r.__contains__("0") and not r.__contains__("1"):
                 filteredList.append(r)
 
         stringLine = " ".join(filteredList)
         appendFile.write("{}\n".format(stringLine))
 
 
+print("Number of 0 :{} , Number of 1 : {}".format(ZeroCount,OneCount))
 
 
 sentimentAnalyze("filteredtext.txt",**dictionary)
