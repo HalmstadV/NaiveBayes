@@ -1,25 +1,27 @@
-import io
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 
 import string
-datasetLineCount = sum(1 for line in open('imdb_dataset.txt'))
+
+yelp_datasetDirectory = '..\\text_files\\yelp_dataset.txt'
+imdb_datasetDirectory = '..\\text_files\\imdb_dataset.txt'
+amazon_datasetDirectory = '..\\text_files\\yelp_dataset.txt'
+
+
+datasetLineCount = sum(1 for line in open(amazon_datasetDirectory))
 dictionaryLineCount = sum(1 for line in open('dictionary.txt'))
 stopwordsLineCount = sum(1 for line in open('stopwords.txt'))
+
 removePunctuation = str.maketrans('', '', string.punctuation)
 stopWordList = list()
 dictionary = {}
-myList = ["1","2","3"]
-firstSentenceScores = []
-analysedSentenceScores =[]
+
+
+firstSentenceScores = list()
+analysedSentenceScores = list()
 
 
 
-filename = "dictionary.txt"
-f = open(filename, "r+")
 
-filename2 = "stopwords.txt"
-f2 = open(filename2,"r+")
+
 
 
 
@@ -43,6 +45,8 @@ def sentimentAnalyze(filename,**dictionary):
                 elif word_sentiment.__eq__("negative"):
                     negativeWordCount+=1
 
+
+
         if positiveWordCount==0 and negativeWordCount==0:
             sentenceSentimentScore=-0
             analysedSentenceScores.append("0")
@@ -59,62 +63,71 @@ def sentimentAnalyze(filename,**dictionary):
         # print( stringLine+ " -  Negative word count : {} , Positive word count {}".format(negativeWordCount,
         #                                                                                  positiveWordCount))
 
-        print( stringLine +" Sentence Score : {}  ".format(sentenceSentimentScore))
+        # print( stringLine +" Sentence Score : {}  ".format(sentenceSentimentScore))
     # print(analysedSentenceScores)
 
+def constructDictionary(filename,dictionary):
+    f = open(filename, "r+")
+
+    for i in range(dictionaryLineCount):
+        dictionaryline = f.readline()
+        splitted_line = dictionaryline.split()
+
+        word=splitted_line[2].replace("word1=","")
+        value=splitted_line[splitted_line.__len__()-1].replace("priorpolarity=","")
+        dictionary[word] = value
+
+def constructStopWordList(filename, *list):
+
+    f2 = open(filename, "r+")
+    # Construct Stop Word List
+    for i in range(stopwordsLineCount):
+        stopwordline = f2.readline().replace("\n", "")
+        stopWordList.append(stopwordline)
+
+
+constructDictionary("dictionary.txt",dictionary)
+constructStopWordList("stopwords.txt",stopWordList)
+sentimentAnalyze("..\\text_files\\filteredtext.txt",**dictionary)
+
+#Read file,apply text preprocessing and write the preprocessed file into a new text file
+
+file1 = open("..\\text_files\\imdb_dataset.txt","r")
+appendFile = open("..\\text_files\\filteredtext.txt", "w")
+ZeroCount = 0;
+OneCount = 0;
 
 
 
-#Construct Sentiment Dictionary
+for i in range(datasetLineCount):
+    datasetline = file1.readline().lower().translate(removePunctuation)
+    splitdatasetline = datasetline.split()
+    if splitdatasetline[len(splitdatasetline)-1].__contains__("0"):
+        firstSentenceScores.append("0")
+        ZeroCount+=1
+    elif splitdatasetline[len(splitdatasetline)-1].__contains__("1"):
+        firstSentenceScores.append("1")
+        OneCount+=1
+    # datasetline = file1.readline().lower().translate(removePunctuation)
 
-for i in range(dictionaryLineCount):
-    dictionaryline = f.readline()
-    splitted_line = dictionaryline.split()
+    words = datasetline.split()
+    filteredList = []
+    for r in words:
+        if r not in stopWordList and not r.__contains__("0") and not r.__contains__("1"):
+            filteredList.append(r)
 
-    word=splitted_line[2].replace("word1=","")
-    value=splitted_line[splitted_line.__len__()-1].replace("priorpolarity=","")
-    dictionary[word] = value
-
-#Construct Stop Word List
-for i in range(stopwordsLineCount):
-    stopwordline = f2.readline().replace("\n", "")
-    stopWordList.append(stopwordline)
-
-    #Read file,apply text preprocessing and write the preprocessed file into a new text file
-    file1 = open("imdb_dataset.txt","r")
-    appendFile = open("filteredtext.txt", "w")
-    ZeroCount = 0;
-    OneCount = 0;
-    for i in range(datasetLineCount):
-        datasetline = file1.readline().lower().translate(removePunctuation)
-        splitdatasetline = datasetline.split()
-        if splitdatasetline[len(splitdatasetline)-1].__contains__("0"):
-            firstSentenceScores.append("0")
-            ZeroCount+=1
-        elif splitdatasetline[len(splitdatasetline)-1].__contains__("1"):
-            firstSentenceScores.append("1")
-            OneCount+=1
-        # datasetline = file1.readline().lower().translate(removePunctuation)
-
-        words = datasetline.split()
-        filteredList = []
-        for r in words:
-            if r not in stopWordList and not r.__contains__("0") and not r.__contains__("1"):
-                filteredList.append(r)
-
-        stringLine = " ".join(filteredList)
-        appendFile.write("{}\n".format(stringLine))
+    stringLine = " ".join(filteredList)
+    appendFile.write("{}\n".format(stringLine))
 
 
-print("Number of 0 :{} , Number of 1 : {}".format(ZeroCount,OneCount))
+# print("Number of 0 :{} , Number of 1 : {}".format(ZeroCount,OneCount))
 
 
-sentimentAnalyze("filteredtext.txt",**dictionary)
 
 SuccessCount = 0;
 FailCount = 0;
 
-for i in range(1001):
+for i in range(analysedSentenceScores.__len__()):
 
     num1 = firstSentenceScores[int(i-1)]
     num2 = analysedSentenceScores[int(i-1)]
@@ -138,5 +151,7 @@ for i in range(1001):
 print("No Successful Guesses : {} ".format(SuccessCount))
 print("No Failed Guesses : {}".format(FailCount))
 
+print(len(analysedSentenceScores))
+print(len(firstSentenceScores))
 
 

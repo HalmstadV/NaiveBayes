@@ -864,6 +864,7 @@ type=weaksubj len=1 word1=booming pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=boost pos1=adj stemmed1=n priorpolarity=positive
 type=weaksubj len=1 word1=boost pos1=verb stemmed1=y priorpolarity=positive
 type=strongsubj len=1 word1=bore pos1=verb stemmed1=y priorpolarity=negative
+type=strongsubj len=1 word1=bored pos1=verb stemmed1=y priorpolarity=negative
 type=strongsubj len=1 word1=boredom pos1=noun stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=boring pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=boring pos1=anypos stemmed1=y priorpolarity=negative
@@ -8245,3 +8246,13 @@ type=strongsubj len=1 word1=zealous pos1=adj stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=zealously pos1=anypos stemmed1=n priorpolarity=negative
 type=strongsubj len=1 word1=zenith pos1=noun stemmed1=n priorpolarity=positive
 type=strongsubj len=1 word1=zest pos1=noun stemmed1=n priorpolarity=positive
+en=1 pos1=noun word1=cant stemmed1=n priorpolarity=negative
+en=1 pos1=noun word1=cannot stemmed1=n priorpolarity=negative
+en=1 pos1=noun word1=couldnt stemmed1=n priorpolarity=negative
+en=1 pos1=noun word1=didnt stemmed1=n priorpolarity=negative
+en=1 pos1=noun word1=doesnt stemmed1=n priorpolarity=negative
+en=1 pos1=noun word1=dont stemmed1=n priorpolarity=negative
+en=1 pos1=noun word1=hadnt stemmed1=n priorpolarity=negative
+en=1 pos1=noun word1=hasnt stemmed1=n priorpolarity=negative
+en=1 pos1=noun word1=shouldnt stemmed1=n priorpolarity=negative
+en=1 pos1=noun word1=wouldnt stemmed1=n priorpolarity=negative
