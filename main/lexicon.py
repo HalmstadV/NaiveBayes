@@ -20,9 +20,9 @@ analysedSentenceScores = list()
 
 
 
+#Dictionary
 
-
-
+#Stop Words
 
 
 def sentimentAnalyze(filename,**dictionary):
@@ -35,7 +35,7 @@ def sentimentAnalyze(filename,**dictionary):
         string3 = textfile.readline()
         splitted_line = string3.split()
 
-
+        #pre-processed sentence
         for word in splitted_line:
             stringLine = " ".join(splitted_line)
             if word in dictionary:
@@ -98,6 +98,7 @@ ZeroCount = 0;
 OneCount = 0;
 
 
+#Store Original Sentence Scores
 
 for i in range(datasetLineCount):
     datasetline = file1.readline().lower().translate(removePunctuation)
@@ -109,6 +110,7 @@ for i in range(datasetLineCount):
         firstSentenceScores.append("1")
         OneCount+=1
     # datasetline = file1.readline().lower().translate(removePunctuation)
+
 
     words = datasetline.split()
     filteredList = []
